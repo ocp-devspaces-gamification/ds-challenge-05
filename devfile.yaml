@@ -32,6 +32,10 @@ components:
         - name: m2
           path: /home/user/.m2
       mountSources: true
+      memoryLimit: 2G
+      memoryRequest: 512Mi
+      cpuRequest: 500m
+      cpuLimit: 2000m
   - name: m2
     volume:
       size: 1G
@@ -40,7 +44,7 @@ commands:
     exec:
       label: "1. Package the application"
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge-04
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-05
       commandLine: "mvn package"
       group:
         kind: build
@@ -49,7 +53,7 @@ commands:
     exec:
       label: "2. Start Development mode"
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge-04
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-05
       commandLine: "mvn compile quarkus:dev"
       group:
         kind: run

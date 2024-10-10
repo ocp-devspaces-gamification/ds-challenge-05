@@ -12,20 +12,20 @@
 * Open the "src/main/java/org/acme/ChallengeResource.java" and inspect the method challengeMethod()
 * Try to put a breakpoint and you realize that they do not work and or a way to do it
 * Find out what extension is required for adding breakpoints. Include the required line in the file ".vscode/extensions.json"
-* Once you update the extensions.json, close the window, restart your workspace. Now you should be able to put a breakpoint in the challengeMethod()
-* Rerun the quarkus application using commands "2. Start Development mode". You should see Debug functionality
+* Once you update the extensions.json, restart your workspace. Now you should be able to put a breakpoint in the challengeMethod()
+* Rerun the quarkus application using commands "2. Start Development mode". You can now use the "Run & Debug" from the navigation. There is a ".vscode/launch.json" already setup for you to use as a debug configuration.
 * Now fix the code, execute "curl localhost:8080/api/challenge" to see you are seeing "The Fifth Chatacter in the word "OpenShift"=[S]"
 
 ### Success Criteria
 * ".vscode/extensions.json" is updated with the required debug extension
-* You have used the debugger to fix the challenge() method
+* You have used the debugger to fix the challengeMethod() in "src/main/java/org/acme/ChallengeResource.java"
 
 ### Resources 
 * https://go.microsoft.com/fwlink/?LinkId=827846
 * 
 
-### What did we learn
-* What we have done so far to reduce Developers pain points? As a Developer, your life is getting simpler with the below
+### What did we learn?
+* OpenShift DevSpaces reduces the Developers pain points. As a Developer, your life is getting simpler with the below
     * Automatic Extensions (Language Support for Java(TM) by Red Hat) inclusion
     * Automatic provisioning of required command line tools
     * Consistent way of building, packaging and running the programs
@@ -34,5 +34,5 @@
 * Added to it, now you can debug your code similar to your normal IDE
 * BIG TAKEAWAY
     * OpenShift DevSpaces works similar to your IDEs
-    * It is a force multiple that enhances your experience to concentrate on just writing code
-    * The entire environment can be created with the notion of "IDE as code" inside the OpenShift environment that you are already familiar with
+    * All the above mentioned benefits enhance the developers joy
+    * The entire development environment is created with "IDE as code" notion inside which makes it easier to track changes
