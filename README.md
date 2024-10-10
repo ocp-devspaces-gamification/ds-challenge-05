@@ -2,12 +2,6 @@
 
 ### Scenario
 * Lets continue to built on top of ds-challenge-04
-* What we have done so far to reduce Developers pain points?
-    * Automatic Extensions (Language Support for Java(TM) by Red Hat) inclusion
-    * Automatic provisioning of required command line tools
-    * Consistent way of building, packaging and running the programs
-    * Consistent way of creating standardized end points for current and future testing
-    * A kubernetes way of requesting resources for workloads that need more memory/cpu for testing. This allows dev to avoid unnecessary machine upgrades and or testing on other machines which require a complete setup
 * This section will explore on adding more extensions in consistent way and also debugging code
 
 ### Set Up + verification
