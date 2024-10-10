@@ -45,7 +45,7 @@ commands:
       label: "1. Package the application"
       component: tools
       workingDir: ${PROJECTS_ROOT}/ds-challenge-05
-      commandLine: "mvn package"
+      commandLine: "./mvnw package"
       group:
         kind: build
         isDefault: true
@@ -54,7 +54,7 @@ commands:
       label: "2. Start Development mode"
       component: tools
       workingDir: ${PROJECTS_ROOT}/ds-challenge-05
-      commandLine: "mvn compile quarkus:dev"
+      commandLine: "./mvnw compile quarkus:dev"
       group:
         kind: run
         isDefault: true

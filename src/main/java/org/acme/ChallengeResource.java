@@ -16,9 +16,9 @@ public class ChallengeResource {
         String name = "OpenShift DevSpaces";
         int length = name.length();
         for (int index=0; index<length; index++){
-            char myChat = name.charAt(index);
+            char indexChar = name.charAt(index);
             if(index==5){
-                char fifthCharacter = name.charAt(index);
+                char fifthCharacter = indexChar;
                 return "The Fifth Chatacter in the word \"OpenShift\"=["+fifthCharacter+"]\n";                
             }
         }
