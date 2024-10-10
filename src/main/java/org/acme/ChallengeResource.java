@@ -11,7 +11,7 @@ public class ChallengeResource {
     //TODO : Find out what is wrong in this method using breakpoints
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Path("challenge04")    
+    @Path("challenge")    
     public String challengeMethod() {
         String name = "OpenShift DevSpaces";
         int length = name.length();

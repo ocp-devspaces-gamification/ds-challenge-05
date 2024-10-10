@@ -14,17 +14,17 @@
 * Open a terminal. Run the command "chmod 755 mvnw" to change the mvnw file to be executable
 * Run the quarkus application using commands "2. Start Development mode" from devfile like you did in the previous lab(s)
 * Select your option "y/n" to the question (if asked) : Do you agree to contribute anonymous build time data to the Quarkus community?
-* Open a new terminal and execute "curl localhost:8080/api/challenge04". The response from the method has an error. The fifth character is "S" but it is returning "h"
+* Open a new terminal and execute "curl localhost:8080/api/challenge". The response from the method has an error. The fifth character is "S" but it is returning "h"
 * Open the "src/main/java/org/acme/ChallengeResource.java" and inspect the method challengeMethod()
 * Try to put a breakpoint and you realize that they do not work and or a way to do it
 * Find out what extension is required for adding breakpoints. Include the required line in the file ".vscode/extensions.json"
-* Once you update the extensions.json, close the window, restart your workspace. Now you should be able to put a breakpoint in the challenge04() method
+* Once you update the extensions.json, close the window, restart your workspace. Now you should be able to put a breakpoint in the challengeMethod()
 * Rerun the quarkus application using commands "2. Start Development mode". You should see Debug functionality
-* Now fix the code, execute "curl localhost:8080/api/challenge04" to see you are seeing "The Fifth Chatacter in the word "OpenShift"=[S]"
+* Now fix the code, execute "curl localhost:8080/api/challenge" to see you are seeing "The Fifth Chatacter in the word "OpenShift"=[S]"
 
 ### Success Criteria
 * ".vscode/extensions.json" is updated with the required debug extension
-* You have used the debugger to fix the challenge04() method
+* You have used the debugger to fix the challenge() method
 
 ### Resources 
 * https://go.microsoft.com/fwlink/?LinkId=827846
