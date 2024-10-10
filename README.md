@@ -31,10 +31,14 @@
 * 
 
 ### What did we learn
-* As a Developer, your life is getting simpler with the below
+* What we have done so far to reduce Developers pain points? As a Developer, your life is getting simpler with the below
     * Automatic Extensions (Language Support for Java(TM) by Red Hat) inclusion
     * Automatic provisioning of required command line tools
     * Consistent way of building, packaging and running the programs
     * Consistent way of creating standardized end points for current and future testing
-* Added to it, now you can debug just the way your normal IDE is
-* Developers can get a requirement to test a service that needs very high resources that are not available on the laptops/desktops. The only way to deal in that scenario is to either update the laptop hardware or code in a different machine (where you will have to reconfigure the entire environment). Lets see how we can handle such scenario without losing all the benefits in the next challenge?
+    * You can request additional resources easily similar to any workload in the kubernetes without the need for traditional hardware refreshes and or needing to require a compelete setup on brand new infrastructure
+* Added to it, now you can debug your code similar to your normal IDE
+* BIG TAKEAWAY
+    * OpenShift DevSpaces works similar to your IDEs
+    * It is a force multiple that enhances your experience to concentrate on just writing code
+    * The entire environment can be created with the notion of "IDE as code" inside the OpenShift environment that you are already familiar with
