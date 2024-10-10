@@ -40,6 +40,15 @@ components:
     volume:
       size: 1G
 commands:
+  - id: changefilepermissions
+    exec:
+      label: "0. Update mvnw to executable"
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-05
+      commandLine: "chmod 755 mvnw"
+      group:
+        kind: build
+        isDefault: true
   - id: package
     exec:
       label: "1. Package the application"
@@ -60,4 +69,5 @@ commands:
         isDefault: true
 events:
   postStart:
+    - changefilepermissions
     - package
