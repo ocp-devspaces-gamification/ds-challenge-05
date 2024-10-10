@@ -24,10 +24,10 @@ components:
           targetPort: 8080
           path: /
         - exposure: public
-          name: challenge04
+          name: challenge
           protocol: https
           targetPort: 8080
-          path: /challenge04          
+          path: /challenge     
       volumeMounts:
         - name: m2
           path: /home/user/.m2
@@ -36,7 +36,7 @@ components:
     volume:
       size: 1G
 commands:
-  - id: 1-package
+  - id: package
     exec:
       label: "1. Package the application"
       component: tools
@@ -45,7 +45,7 @@ commands:
       group:
         kind: build
         isDefault: true
-  - id: 2-startdev
+  - id: livecoding
     exec:
       label: "2. Start Development mode"
       component: tools
