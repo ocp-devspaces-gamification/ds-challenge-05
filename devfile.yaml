@@ -58,3 +58,6 @@ commands:
       group:
         kind: run
         isDefault: true
+events:
+  postStart:
+    - package
