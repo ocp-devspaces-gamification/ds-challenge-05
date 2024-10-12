@@ -6,17 +6,26 @@
 * This section will explore on adding more extensions in consistent way and also debugging code.
 
 ### Set Up + verification
-* Open a terminal. Run the command "chmod 755 mvnw" to change the mvnw file to be executable
+* Open a terminal. Run the below command to change the mvnw file to be executable
+  ```bash
+  chmod 755 mvnw
+  ```
 * Run the quarkus application using commands "2. Start Development mode" from devfile like you did in the previous lab(s)
 * Select your option "y/n" to the question (if asked) : Do you agree to contribute anonymous build time data to the Quarkus community?
-* Open a new terminal and execute "curl localhost:8080/api/challenge". The response from the method has an error. The fifth character is "S" but it is returning "h"
+* Open a new terminal and execute below command. The response from the method has an error. The fifth character is "S" but it is returning "h"
+  ```bash
+  curl localhost:8080/api/challenge
+  ```
 * Open the "src/main/java/org/acme/ChallengeResource.java" and inspect the method challengeMethod()
 * Try to put a breakpoint and you realize that they do not work and or a way to do it
 * Find out what extension is required for adding breakpoints. Include the required line in the file ".vscode/extensions.json"
 * Once you update the extensions.json, restart your workspace (This time it will be quicker). Now you should be able to put a breakpoint in the challengeMethod()
 * Rerun the quarkus application using commands "2. Start Development mode". 
 * You can now use the "Run & Debug" from the navigation. Say Yes, if you are asked to change the "Java Language Server to be run in Standard mode". There is a ".vscode/launch.json" already setup for you to use as a debug configuration.
-* Now fix the code, execute "curl localhost:8080/api/challenge" to see you are seeing "The Fifth Chatacter in the word "OpenShift"=[S]"
+* Now fix the code, execute below command and ensure you are seeing "The Fifth Chatacter in the word "OpenShift"=[S]"
+  ```bash
+  curl localhost:8080/api/challenge
+  ```
 
 ### Success Criteria
 * ".vscode/extensions.json" is updated with the required debug extension
